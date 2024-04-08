@@ -299,3 +299,4 @@ bugreports:
     Во вкладке header status code 200 OK
   actual-result: |
     Во вкладке header status code 500 Internal Server Error
+    
