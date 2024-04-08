@@ -285,18 +285,17 @@ bugreports:
       При убранном флажке "В наличии" пропадает возможность листать страницы сайта
 
   - summary: |
-    Ошибка работы сервера при оформлении заказа
-  environment: |
-    Google Chrome   123.0.6312.86 (Официальная сборка) (64 бит)
-    ОС Windows 10 Домашняя 22H2
-  steps-to-reproduce: |
-    1. Зайти на главную страницу сайта
-    2. Доавить любой товар в корзину
-    3. Открыть DevTools
-    4. Перейти во вкладку Network
-    5. Нажать на кнопку "Checkout"
-  expected-result: |
-    Во вкладке header status code 200 OK
-  actual-result: |
-    Во вкладке header status code 500 Internal Server Error
-    
+      Ошибка работы сервера при оформлении заказа
+    environment: |
+      Google Chrome   123.0.6312.86 (Официальная сборка) (64 бит)
+      ОС Windows 10 Домашняя 22H2
+    steps-to-reproduce: |
+      1. Зайти на главную страницу сайта
+      2. Доавить любой товар в корзину
+      3. Открыть DevTools
+      4. Перейти во вкладку Network
+      5. Нажать на кнопку "Checkout"
+    expected-result: |
+      Во вкладке header status code 200 OK
+    actual-result: |
+      Во вкладке header status code 500 Internal Server Error
