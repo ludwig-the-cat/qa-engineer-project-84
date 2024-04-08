@@ -137,3 +137,19 @@
     Кнопка "Hexlet Store" вернет пользователя на главную страницу сайта
   actual-result: |
     У названия сайта в шапке "Hexlet Store" не работает как ссылка
+
+- summary: |
+    Ошибка работы сервера при оформлении заказа
+  environment: |
+    Google Chrome   123.0.6312.86 (Официальная сборка) (64 бит)
+    ОС Windows 10 Домашняя 22H2
+  steps-to-reproduce: |
+    1. Зайти на главную страницу сайта
+    2. Доавить любой товар в корзину
+    3. Открыть DevTools
+    4. Перейти во вкладку Network
+    5. Нажать на кнопку "Checkout"
+  expected-result: |
+    Во вкладке header status code 200 OK
+  actual-result: |
+    Во вкладке header status code 500 Internal Server Error
